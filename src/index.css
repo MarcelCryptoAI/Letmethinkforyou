@@ -406,6 +406,40 @@ body {
   .card.main, .positions-card { grid-column: 1; }
   .content { padding: 16px; }
 }
+.card {
+  border-radius: 1.5rem;
+  background: linear-gradient(140deg, rgba(20,35,61,0.99) 60%, rgba(24,192,250,0.08) 100%);
+  box-shadow:
+    0 10px 30px rgba(24, 192, 250, 0.13),
+    0 1.5px 5px rgba(0,0,0,0.18),
+    0 0.5px 1.5px rgba(0, 191, 255, 0.15);
+  border: 1.7px solid rgba(24,192,250,0.14);
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.24s, transform 0.16s;
+}
+.card:hover {
+  box-shadow:
+    0 24px 54px 0 rgba(24, 192, 250, 0.18),
+    0 2.5px 9px rgba(64,128,255,0.13),
+    0 0.5px 1.5px rgba(0,191,255,0.25);
+  transform: translateY(-4px) scale(1.02);
+}
+.glass-effect {
+  backdrop-filter: blur(18px);
+  background: linear-gradient(135deg, rgba(20,35,61,0.91) 60%, rgba(24,192,250,0.04) 100%);
+  border: 1.4px solid rgba(138,101,255,0.13);
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+th, td {
+  border-bottom: 1px solid rgba(57,181,255,0.11);
+  vertical-align: middle;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
